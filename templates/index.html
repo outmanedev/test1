@@ -16,7 +16,8 @@
 <title>Power Consumption Prediction</title>
 <div class="intro">
 	<h2>Welcome to the Power Consumption Prediction App</h2>
-	<p>This app allows you to predict the power consumption of Tetouan city based on the temperature and humidity degrees. Simply enter the values and choose a model type, and the app will predict the power consumption in KW for you.</p>
+	<p>This app allows you to predict the power consumption of Tetouan city based on the temperature and humidity degrees. </p>
+		<p>Simply enter the values and choose a model type, and the app will predict the power consumption in KW for you.</p>
 </div>
 <body>
 	<div class="login">
@@ -45,10 +46,12 @@
 		</form>
 		
 		{% if prediction %}
-			<br>
-			<p style="color: yellow">Predicted Power Consumption for Tetouan City: {{ prediction }} KW</p>
-		{% endif %}
-
+		<br>
+		<p style="color: yellow">Predicted Power Consumption for Tetouan City: {{ prediction }} KW</p>
+		<div class="notification">
+			<p>This app allows you to predict the power consumption of Tetouan city based on the temperature and humidity degrees. Simply enter the values and choose a model type, and the app will predict the power consumption in KW for you.</p>
+		</div>
+	{% endif %}
 		<br>
 		
 	</div>
