@@ -7,11 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-	<style>
-		label {
-			margin-bottom: 10px;
-		}
-	</style>
+
 </head>
 <title>Power Consumption Prediction</title>
 <div class="intro">
@@ -48,9 +44,7 @@
 		{% if prediction %}
 		<br>
 		<p style="color: yellow">Predicted Power Consumption for Tetouan City: {{ prediction }} KW</p>
-		<div class="notification">
-			<p>This app allows you to predict the power consumption of Tetouan city based on the temperature and humidity degrees. Simply enter the values and choose a model type, and the app will predict the power consumption in KW for you.</p>
-		</div>
+		
 	{% endif %}
 		<br>
 		
